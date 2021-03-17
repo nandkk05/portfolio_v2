@@ -1,20 +1,23 @@
 <template>
+<Header/>
 <Landing/>
-  <Hero/>
+<About/>
   <Education/>
 </template>
 
 <script>
-import Hero from './components/Hero.vue'
 import Education from './components/Education.vue'
 import Landing from './components/Landing.vue'
+import Header from './components/Header.vue'
+import About from './components/About.vue'
 
 export default {
   name: 'App',
   components: {
-    Hero,
+    Header,
     Education,
-    Landing
+    Landing,
+    About
   }
 }
 </script>

@@ -6,7 +6,7 @@
       <h1 class="title-font sm:text-7xl text-5xl mb-4 font-bold text-gray-900">Nand Kishor.
       </h1>
       <h1 class="title-font sm:text-7xl text-5xl mb-4 font-bold text-gray-500">I build things for web.</h1>
-      <p class="mb-8 leading-relaxed lg:w-1/2">I am a Web Designer from India who is working on a design tool called Adobe Xd. Love to create spaces for people to gather, collaborate, and share knowledge to add value and increase personal growth. Wanna talk to me? Just say "OK Google, talk to Alpha dev".</p>
+      <p class="mb-8 text-lg leading-relaxed lg:w-1/2">I am a Web Designer from India who is working on a design tool called Adobe Xd. Love to create spaces for people to gather, collaborate, and share knowledge to add value and increase personal growth. Wanna talk to me? Just say "OK Google, talk to Alpha dev".</p>
       <div class="flex justify-center">
         <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get In Touch</button>
       </div>

@@ -1,29 +1,99 @@
 <template>
-    <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap pt-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium lg:ml-5 items-left sm:items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
+<div class="relative bg-white " >
+  <div class="max-w-7xl mx-auto px-4 sm:px-6" >
+    <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10 ">
+      <div class="flex justify-start lg:w-0 lg:flex-1" >
+        <a href="#">
+          <span class="sr-only">Workflow</span>
+          <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+        </a>
+      </div>
+      <div class="-mr-2 -my-2 md:hidden">
+        <button @click="isOpen=true" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+          <span class="sr-only">Open menu</span>
+          <!-- Heroicon name: outline/menu -->
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
 
-    </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900" href="#about">About</a>
-      <a class="mr-5 hover:text-gray-900">Experience</a>
-      <a class="mr-5 hover:text-gray-900">Work</a>
-      <a class="mr-5 hover:text-gray-900">Contact</a>
-    </nav>
-        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Resume
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button>
+      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+          Sign in
+        </a>
+        <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+          Sign up
+        </a>
+      </div>
+    </div>
   </div>
-</header>
+
+  <!--
+    Mobile menu, show/hide based on mobile menu state.
+
+    Entering: "duration-200 ease-out"
+      From: "opacity-0 scale-95"
+      To: "opacity-100 scale-100"
+    Leaving: "duration-100 ease-in"
+      From: "opacity-100 scale-100"
+      To: "opacity-0 scale-95"
+  -->
+ 
+  <div v-show="isOpen" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+    <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+      <div class="pt-5 pb-6 px-5">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+          </div>
+          <div class="-mr-2">
+            <button @click="isOpen = !isOpen" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      
+      </div>
+      <div class="py-6 px-5 space-y-6">
+        <div class="grid grid-row-2 gap-y-4 gap-x-8">
+          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+            Pricing
+          </a>
+
+          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+            Docs
+          </a>
+
+          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+            Enterprise
+          </a>
+
+          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+            Events
+          </a>
+        </div>
+        <div>
+          <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+            Sign up
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    data: () => ({
+      isOpen: false
+    })
 }
 </script>

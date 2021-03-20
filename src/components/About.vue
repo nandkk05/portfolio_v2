@@ -2,7 +2,7 @@
     <section class="text-gray-600 body-font" id="about">
   <div class="container mx-auto flex px-5 sm:py-0 md:flex-row flex-col items-center mb-20">
     <div class="lg:flex-grow md:w-1/2 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
-      <h1 class="title-font sm:text-7xl text-5xl mb-6 font-medium text-gray-900"><pre>About Me</pre>
+      <h1 class="title-font sm:text-6xl text-4xl mb-8 font-medium text-gray-900">About Me
       </h1>
       <p class="mb-6 text-base leading-relaxed">Hello! I'm Nand Kishor, a software engineer based in Boston, MA.
 I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.

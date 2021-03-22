@@ -28,7 +28,7 @@
                     <img
                       alt="..."
                       class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="login"
+                      src="https://user-images.githubusercontent.com/33036554/111960944-67167b00-8b16-11eb-8e8e-6f81e2b478b0.png"
                     />
                   </div>
                 </router-link>
@@ -45,7 +45,7 @@
                     <img
                       alt="..."
                       class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="profile"
+                      :src="sniffgames"
                     />
                   </div>
                 </router-link>
@@ -55,17 +55,16 @@
                 <h5 class="text-xl font-semibold pb-4 text-center">
                   Gadacts
                 </h5>
-                <router-link to="/landing">
                   <div
                     class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                   >
                     <img
                       alt="..."
                       class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="landing"
+                      src="https://cdn.dribbble.com/users/3111348/screenshots/6336022/gadacts_4x.png"
+                      
                     />
                   </div>
-                </router-link>
               </div>
             </div>
           </div>
@@ -75,17 +74,13 @@
 </template>
 
 <script> 
-import login from "@/assets/login.jpg";
-import profile from "@/assets/profile.jpg";
-import landing from "@/assets/landing.jpg";
+import sniffgames from "@/assets/sniffgames.png";
 
 export default {
     name: 'Projects',
     data() {
         return{
-            profile,
-            login,
-            landing
+            sniffgames,
         }
     }
 }

@@ -19,11 +19,17 @@
       </div>
 
       <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-        <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-          Sign in
+        <a href="#about" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+          About
         </a>
-        <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-          Sign up
+        <a href="#projects" class="ml-8 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+          Projects
+        </a>
+        <a href="#contact" class="ml-8 whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+          Contact
+        </a>
+        <a href="https://linkedin.com/in/nandkk05" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+          Resume
         </a>
       </div>
     </div>
@@ -61,25 +67,21 @@
       </div>
       <div class="py-6 px-5 space-y-6">
         <div class="grid grid-row-2 gap-y-4 gap-x-8">
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-            Pricing
+          <a href="#about" class="text-base font-medium text-gray-900 hover:text-gray-700">
+            About
           </a>
 
           <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-            Docs
+            Projects
           </a>
 
           <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-            Enterprise
-          </a>
-
-          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-            Events
+            Contact
           </a>
         </div>
         <div>
-          <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-            Sign up
+          <a href="https://www.linkedin.com/in/nandkk05/" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+            Resume
           </a>
         </div>
       </div>

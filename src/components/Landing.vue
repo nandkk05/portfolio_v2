@@ -13,7 +13,7 @@
     </div>
   </div>
         <img
-        class="absolute top-0 b-auto pl-20 right-0 pt-20 sm:pt-24 sm:w-6/12  sm:mt-0 w-10/12 max-h-860-px invisible sm:visible"
+        class="absolute top-0 b-auto right-0 pl-20    sm:w-1/2 h-auto mt-24  invisible sm:visible"
         :src="patternVue"
         alt="..."
       />

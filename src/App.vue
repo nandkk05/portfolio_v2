@@ -15,7 +15,13 @@ import Experience from './components/Experience.vue'
 import Projects from './components/Projects.vue'
 import Contributions from './components/Contributions.vue'
 
+
+
+
+
 export default {
+
+
   name: 'App',
   components: {
     Header,

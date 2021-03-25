@@ -1,5 +1,5 @@
 <template>
-<section class="mt-48 md:mt-40 pb-40 relative ">
+<section class="mt-30 md:mt-20 pb-40 relative ">
           <div class="justify-center text-center flex flex-wrap mt-24 ">
         <div class="w-full md:w-6/12 px-12 md:px-4">
           <h2 class="font-semibold text-4xl">Projects</h2>
@@ -21,34 +21,30 @@
                 <h5 class="text-xl font-semibold pb-4 text-center">
                   SuperChat App
                 </h5>
-                <router-link to="/auth/login">
                   <div
                     class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                   >
                     <img
                       alt="..."
                       class="align-middle border-none max-w-full h-auto rounded-lg"
-                      src="https://user-images.githubusercontent.com/33036554/111960944-67167b00-8b16-11eb-8e8e-6f81e2b478b0.png"
+                      src="https://user-images.githubusercontent.com/33036554/112100333-fa10ed00-8bca-11eb-9860-4bb00edefb62.jpg"
                     />
                   </div>
-                </router-link>
               </div>
 
               <div class="w-full lg:w-4/12 px-4">
                 <h5 class="text-xl font-semibold pb-4 text-center">
                   Sniffgames Website
                 </h5>
-                <router-link to="/profile">
                   <div
                     class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                   >
                     <img
                       alt="..."
                       class="align-middle border-none max-w-full h-auto rounded-lg"
-                      :src="sniffgames"
+                      src="https://user-images.githubusercontent.com/33036554/112099993-6dfec580-8bca-11eb-962c-f88640563721.jpg"
                     />
                   </div>
-                </router-link>
               </div>
 
               <div class="w-full lg:w-4/12 px-4">
@@ -74,14 +70,8 @@
 </template>
 
 <script> 
-import sniffgames from "@/assets/sniffgames.png";
 
 export default {
-    name: 'Projects',
-    data() {
-        return{
-            sniffgames,
-        }
-    }
+    name: 'Projects'
 }
 </script>

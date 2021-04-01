@@ -5,6 +5,7 @@
   <Experience/>
   <Projects/>
   <Contributions/>
+  <Talks/>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import About from './components/About.vue'
 import Experience from './components/Experience.vue'
 import Projects from './components/Projects.vue'
 import Contributions from './components/Contributions.vue'
+import Talks from './components/Talks.vue'
 
 
 
@@ -29,7 +31,8 @@ export default {
     About,
     Experience,
     Projects,
-    Contributions
+    Contributions,
+    Talks
   }
 }
 </script>
